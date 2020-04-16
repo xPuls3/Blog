@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://xpuls3.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://xpuls3.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-02-15T15:04:14-05:00</updated><id>https://xpuls3.github.io/blog/feed.xml</id><title type="html">Impulsive Updates</title><subtitle>This is an informative collection of what I deem important about selective topics.</subtitle><author><name>Puls3</name></author><entry><title type="html">What’s With Paldera</title><link href="https://xpuls3.github.io/blog/paldera/whats-with-paldera/" rel="alternate" type="text/html" title="What's With Paldera" /><published>2020-01-26T22:46:32-05:00</published><updated>2020-01-26T22:46:32-05:00</updated><id>https://xpuls3.github.io/blog/paldera/whats-with-paldera</id><content type="html" xml:base="https://xpuls3.github.io/blog/paldera/whats-with-paldera/">&lt;p&gt;So recently I’ve been browsing the r/PBBG subreddit,
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://xpuls3.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://xpuls3.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-04-16T03:32:18-04:00</updated><id>https://xpuls3.github.io/blog/feed.xml</id><title type="html">Impulsive Updates</title><subtitle>This is an informative collection of what I deem important about selective topics.</subtitle><author><name>Puls3</name><email>Xer0.Puls3.XXII@gmail.com</email></author><entry><title type="html">Pendorian Elite UI v3.0</title><link href="https://xpuls3.github.io/blog/elite/ui/version-3-0/" rel="alternate" type="text/html" title="Pendorian Elite UI v3.0" /><published>2020-04-11T19:37:24-04:00</published><updated>2020-04-11T19:37:24-04:00</updated><id>https://xpuls3.github.io/blog/elite/ui/version-3-0</id><content type="html" xml:base="https://xpuls3.github.io/blog/elite/ui/version-3-0/">&lt;p&gt;This post will go into detail about the latest release of my userscript &lt;a href=&quot;https://xpuls3.github.io/Pendorian-Elite-UI/&quot;&gt;Pendorian Elite UI&lt;/a&gt; for &lt;a href=&quot;https://pendoria.net/?ref=334&quot;&gt;Pendoria&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;​&lt;/p&gt;
+
+&lt;h2 id=&quot;why-30-over-26&quot;&gt;Why 3.0 over 2.6?&lt;/h2&gt;
+
+&lt;p&gt;As of this update I’ve taken every module of Pendorian Elite UI and split them into their own folders.
+In order to accomplish this I’ve written &lt;a href=&quot;https://github.com/xPuls3/Pendorian-Elite-UI/blob/master/build.js&quot;&gt;a builder&lt;/a&gt;
+in &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt; to read all of these modules and build them into a &lt;a href=&quot;https://en.wikipedia.org/wiki/Userscript&quot;&gt;userscript&lt;/a&gt;.
+As the entire core of the script is technically being rewritten, in order to follow &lt;a href=&quot;https://semver.org/&quot;&gt;Semantic Versioning&lt;/a&gt; I decided
+to name this version a major version, version three.&lt;/p&gt;
+
+&lt;p&gt;Note that &lt;a href=&quot;https://github.com/xPuls3/Pendorian-Elite-UI/blob/2.6/script.user.js&quot;&gt;Elite UI Release 2.6&lt;/a&gt; which is the previous version I released will still be available to download as a legacy release.&lt;/p&gt;
+
+&lt;p&gt;​&lt;/p&gt;
+
+&lt;h2 id=&quot;why-not-webpack&quot;&gt;Why not Webpack?&lt;/h2&gt;
+
+&lt;p&gt;People have asked me why I didn’t use &lt;a href=&quot;https://webpack.js.org/&quot;&gt;Webpack&lt;/a&gt; to build my userscript,
+and the answer is that it isn’t meant for this.
+&lt;a href=&quot;https://webpack.js.org/&quot;&gt;Webpack&lt;/a&gt; was intended to take the many files associated with a website
+and merge them to avoid multiple requests, I needed something different.
+My builder which I’ve dubbed “Elite Builder” takes code originally intended to
+stay within one file and merge them all together.&lt;/p&gt;
+
+&lt;p&gt;On top of this the options section had to have detailed comments and be easy to understand for those that aren’t developers.&lt;/p&gt;
+
+&lt;p&gt;​&lt;/p&gt;
+
+&lt;h2 id=&quot;elite-builder&quot;&gt;Elite Builder?&lt;/h2&gt;
+
+&lt;p&gt;This first iteration of Elite Builder isn’t pretty but it gets the job done.
+Simultaneously it opens the door to automatically building an options menu in the future,
+and if a menu gets added it wouldn’t be too hard to turn Pendorian Elite UI into an extension!&lt;/p&gt;
+
+&lt;p&gt;As an extension Pendorian Elite UI would rely on nothing but Pendoria, and streamline the installation process.&lt;/p&gt;
+
+&lt;p&gt;​&lt;/p&gt;
+
+&lt;h2 id=&quot;that-it&quot;&gt;That it?&lt;/h2&gt;
+
+&lt;p&gt;That is it for this release, with these changes it will do wonders for expanding Elite UI’s capability.&lt;/p&gt;
+
+&lt;p&gt;Here’s the official release notes from the GitHub;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Split every module into their own files.&lt;/li&gt;
+  &lt;li&gt;Created a builder in NodeJS to build the userscript from the module files.&lt;/li&gt;
+  &lt;li&gt;Modified all variables to follow JavaScript standards.&lt;/li&gt;
+  &lt;li&gt;Modified strings to use template literals.&lt;/li&gt;
+  &lt;li&gt;Optimized the Extra Bottom Links Module.&lt;/li&gt;
+  &lt;li&gt;Renamed the Extra Bottom Links Module to Extra Footer Links.&lt;/li&gt;
+  &lt;li&gt;Rewrote the readme file to be more focused.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Puls3</name></author><category term="Elite UI" /><summary type="html">This post will go into detail about the latest release of my userscript Pendorian Elite UI for Pendoria.</summary></entry><entry><title type="html">What’s With Paldera</title><link href="https://xpuls3.github.io/blog/paldera/whats-with-paldera/" rel="alternate" type="text/html" title="What's With Paldera" /><published>2020-01-26T22:46:32-05:00</published><updated>2020-01-26T22:46:32-05:00</updated><id>https://xpuls3.github.io/blog/paldera/whats-with-paldera</id><content type="html" xml:base="https://xpuls3.github.io/blog/paldera/whats-with-paldera/">&lt;p&gt;So recently I’ve been browsing the r/PBBG subreddit,
 and I came across a treasure trove of drama from a game that hasn’t even released yet.
 I’ve decided to write up a report about my findings for everyone to read.&lt;/p&gt;
 
@@ -97,7 +149,7 @@ Which given how confusing many of these answers have been, I understand his frus
 &lt;/blockquote&gt;
 
 &lt;p&gt;In the end it seems this is the most clear of an answer we will be able to get,
-so we now know 100% that uuunofficial Paldera guild Discords will result in &lt;em&gt;at least&lt;/em&gt; the creator getting banned.
+so we now know 100% that unofficial Paldera guild Discords will result in &lt;em&gt;at least&lt;/em&gt; the creator getting banned.
 He has not yet stated if the participants of these unofficial communities will be punished.&lt;/p&gt;
 
 &lt;p&gt;​&lt;/p&gt;
@@ -107,6 +159,8 @@ He has not yet stated if the participants of these unofficial communities will b
 &lt;p&gt;Personally I don’t know what to make of this game so far, you can all form your own opinions.
 Just know that I’ll be including more information related to this soon (via editing this post),
 however I’m too tired of this to continue at the moment.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Edit:&lt;/strong&gt; As of the time of writing this there will be no more edits.&lt;/p&gt;
 
 &lt;p&gt;I’m not good at writing posts like this, it was less information and more quoting left and right.
 Which personally I find difficult to write about, however I’ll do my best to get you all as much relevant information as I can find.
@@ -863,107 +917,4 @@ If you disliked it tell then me why down in the comments and I’ll consider you
 &lt;h2 id=&quot;join-pendoria-if-you-havent&quot;&gt;Join Pendoria If You Haven’t!&lt;/h2&gt;
 
 &lt;p&gt;If you haven’t joined it’s never too late to start playing!
-&lt;br /&gt;- &lt;a href=&quot;https://pendoria.net/&quot;&gt;https://pendoria.net/&lt;/a&gt;&lt;/p&gt;</content><author><name>Puls3</name></author><summary type="html">This is me, Puls3, exporting and reformatting Dragon’s rundown on recent changes to the numbers. This was a lot of work exporting it from Discord and probably much more from Dragon, so yeah.</summary></entry><entry><title type="html">Pendoria’s First Independence Day</title><link href="https://xpuls3.github.io/blog/pendoria/first-independence-day/" rel="alternate" type="text/html" title="Pendoria's First Independence Day" /><published>2019-07-06T05:25:11-04:00</published><updated>2019-07-06T05:25:11-04:00</updated><id>https://xpuls3.github.io/blog/pendoria/first-independence-day</id><content type="html" xml:base="https://xpuls3.github.io/blog/pendoria/first-independence-day/">&lt;h2 id=&quot;another-news-post-already&quot;&gt;Another News Post Already?&lt;/h2&gt;
-
-&lt;p&gt;You know when you want to wait to do something,
-but it becomes even more of a bigger task the longer you wait?
-Yeah, that’s this post. Maria has been doing a very good job spamming out helpful updates recently,
-and I feared if I waited any longer that this list would get way too long.&lt;/p&gt;
-
-&lt;p&gt;​&lt;/p&gt;
-
-&lt;h2 id=&quot;first-celebrated-independence-day&quot;&gt;First Celebrated Independence Day?&lt;/h2&gt;
-
-&lt;p&gt;Despite my cries last year, Pendoria has never before celebrated The United States’ Independence Day,
-recently this has changed as Pendoria celebrates its first every 4th of July event,
-equipped with titles such as Free and Independent able to be purchased.
-It’s a standard re-skin of the usual events with points as well as loot crates renamed to something more special sounding.&lt;/p&gt;
-
-&lt;p&gt;As this is an event a promotion is now active,
-all purchases receive 100% more rhodium as well as 1 promotion point per single United States dollar.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;The event will continue until July 12th!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;​&lt;/p&gt;
-
-&lt;h2 id=&quot;should-i-blame-maria-as-usual&quot;&gt;Should I Blame Maria? (as usual)&lt;/h2&gt;
-
-&lt;p&gt;During the recent Independence Day event Maria apparently had an accidental “typo” in her code,
-it resulted in the coveted limited event titles to be incapable of being purchased until almost July 7th.
-Chat was unsurprisingly plagued with complaints.&lt;/p&gt;
-
-&lt;p&gt;​&lt;/p&gt;
-
-&lt;h2 id=&quot;blasphemy&quot;&gt;Blasphemy!?&lt;/h2&gt;
-
-&lt;p&gt;Due to recent droughts in ingots caused by Lady Luck being less than fair to us Pendorians,
-ingots will now have a fixed drop rate! To put this in simple words,
-as opposed to an ingot having a one divided by x chance to drop each action,
-a single ingot will be provided to you every x actions.&lt;/p&gt;
-
-&lt;p&gt;All drop rate modifiers will still effect the x variable in the same manner and amount as before.
-This removes a major dependence on luck from the game,
-and everyone seems to be very delighted about it indeed.&lt;/p&gt;
-
-&lt;p&gt;​&lt;/p&gt;
-
-&lt;h2 id=&quot;no-more-market-spam&quot;&gt;No More Market Spam?&lt;/h2&gt;
-
-&lt;p&gt;What Maria referred to as an unintended result of the implementation of buy orders caused quite a stir whenever multiple users flooded the buy order market with pages of multiple buy orders per user,
-any Pendoria player knows that on the regular sell order market only 1 order can be put at a time,
-the development team has taken a stance on this and completely removed the ability to post multiple buy orders as of July 6th,
-no more market spam?
-Yes indeed.&lt;/p&gt;
-
-&lt;p&gt;​&lt;/p&gt;
-
-&lt;h2 id=&quot;are-annoying-sp-drops-fixed&quot;&gt;Are Annoying SP Drops Fixed?&lt;/h2&gt;
-
-&lt;p&gt;This isn’t necessarily what happened, but it’s the end result that was intended.
-So from the first implementation of recent statistics Battlers had gotten both small and large SP drops to show in their log,
-recently Maria has made these small SP drops which were previously not shown to TSers,
-spam the recent statistics in all of their glory.
-TSers obviously didn’t like that, so now we have a filter for recent statistics,
-isn’t that nice? Thanks Maria!&lt;/p&gt;
-
-&lt;p&gt;​&lt;/p&gt;
-
-&lt;h2 id=&quot;anything-else&quot;&gt;Anything Else?&lt;/h2&gt;
-
-&lt;p&gt;That’s not all the changes pushed this July 4th, some of the following are a few of the less interesting changes.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;An Encampment tax option has been added so that you don’t run dry of materials.&lt;/li&gt;
-  &lt;li&gt;An Event calendar is now available while and event is running.&lt;/li&gt;
-  &lt;li&gt;Tool-tips on what boosts effect Encampment strength.&lt;/li&gt;
-  &lt;li&gt;Tool-tips on reminder pop-ups in case you forget what each little thing means.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;And there you have it, interesting or not, that’s what was modified recently.&lt;/p&gt;
-
-&lt;p&gt;​&lt;/p&gt;
-
-&lt;h2 id=&quot;thats-it&quot;&gt;That’s It?&lt;/h2&gt;
-
-&lt;p&gt;Alright, that’s it for this post.
-I’m going to continue to write up more, so if you enjoyed it then be sure to read the next one!
-If you disliked it tell then me why down in the comments and I’ll consider your opinion.&lt;/p&gt;
-
-&lt;p&gt;This post was also released on Reddit.
-&lt;br /&gt;- &lt;a href=&quot;https://www.reddit.com/r/PBBG/comments/ca0ihc/pendorias_first_independence_day/&quot; target=&quot;_blank&quot;&gt;Reddit Version Link&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This series of posts is archived at the link below if you missed any.
-&lt;br /&gt;- &lt;a href=&quot;https://xpuls3.github.io/blog/&quot;&gt;https://xpuls3.github.io/blog/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;​&lt;/p&gt;
-
-&lt;h2 id=&quot;join-pendoria-if-you-havent&quot;&gt;Join Pendoria If You Haven’t!&lt;/h2&gt;
-
-&lt;p&gt;If you haven’t joined it’s never too late to start playing!
-Below I have a referral link that helps me out on the game if you click it and sign up,
-so please click that link, however if you don’t want to you can always click the other link.&lt;/p&gt;
-
-&lt;p&gt;If you don’t care, click the first one, it doesn’t hurt you at all.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Please Click Me; &lt;a href=&quot;https://pendoria.net/?ref=334&quot;&gt;https://pendoria.net/?ref=334&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;You Make Me Sad; &lt;a href=&quot;https://pendoria.net/&quot;&gt;https://pendoria.net/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Puls3</name></author><summary type="html">Another News Post Already?</summary></entry></feed>
+&lt;br /&gt;- &lt;a href=&quot;https://pendoria.net/&quot;&gt;https://pendoria.net/&lt;/a&gt;&lt;/p&gt;</content><author><name>Puls3</name></author><summary type="html">This is me, Puls3, exporting and reformatting Dragon’s rundown on recent changes to the numbers. This was a lot of work exporting it from Discord and probably much more from Dragon, so yeah.</summary></entry></feed>
