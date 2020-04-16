@@ -355,9 +355,9 @@ table td { border: 1px solid #66bfff; }
 
 blockquote { color: #c5c5c5; border-left-color: #c5c5c5; background: rgba(0, 0, 0, 0.2); box-shadow: 1px 0 1px 1px rgba(0, 0, 0, 0.5); padding-bottom: 5px; }
 
-.social-media-list li a, .pagination li a { border: 1px solid black; box-shadow: 0 0 1px 1px black; }
+.social-media-list li a, .pagination li a { border: none; box-shadow: 0 0 2px 1px black; }
 
-.social-media-list li a:hover, .pagination li a:hover { border: 1px solid black; background-color: #5e606b; }
+.social-media-list li a:hover, .pagination li a:hover { background-color: #5e606b; }
 
 .social-media-list li a:hover span, .pagination li a:hover span { text-decoration: none !important; }
 
